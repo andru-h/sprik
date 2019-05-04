@@ -4,3 +4,88 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+
+
+//---- Resets ----
+body {
+  @apply .text-grey-darker .bg-grey-lightest;
+}
+
+//---- Components ----
+.card {
+  @apply .shadow .bg-white .border;
+}
+
+// ---- Forms ----
+// Inputs
+.input-text {
+  @apply .px-3 .py-2 .border .appearance-none .text-sm .rounded;
+}
+
+.input-text:disabled {
+  @apply .bg-grey-lightest .text-grey;
+}
+
+.input-text-invalid {
+  @apply .border-red;
+}
+
+// Form text tags
+.form-title {
+  @apply .text-base .text-grey-darker .uppercase .border-b-2 .border-primary-action .pb-2 .pr-6 .font-bold;
+}
+
+.form-label {
+  @apply .text-xs .text-grey-dark;
+}
+
+.form-error {
+  @apply .text-xs .text-red;
+}
+
+// Buttons
+.btn {
+  @apply .py-2 .px-4 .cursor-pointer .no-underline .text-sm .rounded;
+}
+
+.btn-primary {
+  @apply .bg-primary-action .border .border-primary-action .text-white;
+}
+
+.btn-primary:hover {
+  @apply .bg-primary-action-dark;
+}
+
+.btn-default {
+  @apply .border .border-grey .bg-white .text-grey-darker;
+}
+
+.btn-default:hover {
+  @apply .bg-grey-lightest;
+}
+
+.btn-destroy {
+  @apply .border .border-red .bg-red-lightest .text-red;
+}
+
+.btn-destroy:hover {
+  @apply .bg-red-lighter .text-red-dark .border-red-dark;
+}
+
+// ---- Message ----
+.message {
+  @apply .rounded .py-2 .px-4 .text-xs;
+}
+
+.message-success {
+  @apply .bg-green-lightest .text-green-dark;
+}
+
+// ---- Sidebar ----
+.sidebar-item {
+  @apply .bg-white .p-4 .text-xs .border-b .border-grey-lighter .no-underline .text-grey-darker .font-bold .uppercase .text-xs .flex .items-center;
+}
+
+.sidebar-item-selected {
+  @apply .bg-grey-lighter;
+}

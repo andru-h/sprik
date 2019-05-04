@@ -48,6 +48,9 @@ let colors = {
 
   'primary': '#1f9d55',
 
+  'primary-action': '#277e9d',
+  'primary-action-dark': '#1a465f',
+
   'black': '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
